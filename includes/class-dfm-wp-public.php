@@ -69,7 +69,6 @@ class DFM_WP_Public {
 
 		// include dependencies
 		add_action( 'after_setup_theme', array( $this, 'setup_dependencies' ), 20, 0 );
-
 	}
 
 	/**
@@ -82,7 +81,7 @@ class DFM_WP_Public {
 	public function setup_dependencies() {
 		if ( is_admin() ) {
 			// Include dependencies
-			//require_once( $this->plugin_path . 'includes/class-something.php' );
+			require_once( $this->plugin_path . 'includes/class-dfm-wp-admin-category-listing.php' );
 		}
 	}
 

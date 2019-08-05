@@ -46,3 +46,8 @@ Page 5:
 
 Title: World and News
 Content: An unordered list of the 100 most recent posts from the "World and News" category. If there are no posts in the "World and News" category, I should see a line of text that states: "There are no World and News posts. Check back later"
+
+## Solution Notes
+You can edit what categories are in the listing by modifying the `categories` array in  `/includes/class-dfm-wp-admin-category-listing.php`.
+
+It was not specified if we were to create categories if they didn't exist, so I added a tiny bit of error handling to ensure the user creates the necessary categories and configures them properly.
